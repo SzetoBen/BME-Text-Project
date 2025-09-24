@@ -1,26 +1,6 @@
-# Classifying Public Sentiment Toward Artificial Intelligence on Twitter Before and After the Public Launch of GenAI  
+# Dataset Metadata
 
-**Group:** BME - Ben Szeto (Leader), Eddie Zhang, Masato Takedai  
-**Course:** DS 4002 – 001 – 1pm  
-**Date:** 9/19/25  
-
----
-
-## Hypothesis and Goal Statement  
-
-Apply pretrained sentiment analysis models to classify Twitter posts about AI as positive or negative and compare sentiment before (2017–2021) and after (2022–present) the launch of generative AI.  
-
-**Hypothesis:** Public sentiment toward AI has increased since the launch of generative AI.  
-
----
-
-## Executive Summary  
-
-We want to focus on sentiment shifts in AI discourse after generative AI tools like ChatGPT were released to the public. To do this, we will use pretrained sentiment models on two datasets of AI-related tweets — one before generative AI and one after.  
-
----
-
-## Dataset Establishment  
+## Dataset Summary  
 
 - **Pre-GenAI Dataset (2017–2021):**  
   - Collected via Twitter API, 36 raw variables, with 19 non-sensitive variables retained.  
@@ -91,43 +71,9 @@ We mitigated by excluding pre-release tweets from the post-GenAI dataset.
 
 ## Exploratory Plots  
 
-- **Figure 1:** Count of Tweets over time (pre-ChatGPT).  
-- **Figure 2:** Count of Tweets over time (post-ChatGPT).  
+![Count of Tweets over time (pre-ChatGPT)](img/pre-count.png) 
+**Figure 1:** Count of Tweets over time (pre-ChatGPT).  
 
----
 
-## Analysis Plan  
-
-### Goal  
-Determine whether public sentiment toward AI has shifted before vs. after ChatGPT.  
-- A **≥5% difference** in positive sentiment between datasets indicates a shift.  
-
-### Preprocessing  
-- Keep only **tweet/Text** columns.  
-- Remove empty rows, duplicates, and URLs.  
-- Remove pre-ChatGPT rows from post-dataset.  
-
-### Sentiment Analysis Models  
-- **VADER**: Social media sentiment analysis.  
-- **Twitter-roberta-base-sentiment**: Fine-tuned on tweets.  
-- **Bert-base-multilingual-uncased-sentiment**: Multilingual product reviews.  
-- **Distilbert-base-uncased-emotion**: Emotion detection.  
-
-Using multiple models allows comparison and validation.  
-
-### Evaluation  
-- Sentiment classification:  
-  - Positive: [0.6, 1]  
-  - Negative: [0, 0.4]  
-  - Neutral: (0.4, 0.6)  
-
-- Success criteria: At least **two models agree** on direction of sentiment change.  
-
----
-
-## References  
-
-1. W. Intayoad, *Tweets-AI*, GitHub, 2025. [https://github.com/warint/tweets-ai](https://github.com/warint/tweets-ai)  
-2. G. Serres, *Twitter Sentiment Analysis on Generative AI Adoption*, GitHub, 2025. [https://github.com/Guillaumeserres31/Twitter-Sentiment-Analysis-on-Generative-AI-Adoption](https://github.com/Guillaumeserres31/Twitter-Sentiment-Analysis-on-Generative-AI-Adoption)  
-3. C.J. Hutto, *vaderSentiment*, GitHub, 2025. [https://github.com/cjhutto/vaderSentiment](https://github.com/cjhutto/vaderSentiment)  
-4. F. Pascual, “Getting Started with Sentiment Analysis using Python,” Hugging Face, 2022. [https://huggingface.co/blog/sentiment-analysis-python](https://huggingface.co/blog/sentiment-analysis-python)  
+![Count of Tweets over time (post-ChatGPT](img/post-count.png)
+**Figure 2:** Count of Tweets over time (post-ChatGPT).  
