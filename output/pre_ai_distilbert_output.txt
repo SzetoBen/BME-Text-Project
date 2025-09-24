@@ -1,0 +1,7 @@
+Average Sentiment for 56221 Samples
+sadness: 0.02
+joy: 0.81
+love: 0.05
+anger: 0.06
+fear: 0.03
+surprise: 0.01
