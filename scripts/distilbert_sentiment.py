@@ -18,7 +18,7 @@ def get_sentiment(classifier ,text):
     prediction = classifier(text)
     return prediction[0]
 
-def process_datset(filename):
+def process_datset(filename, column_name):
     classifier = pipeline(
         "text-classification",
         model='bhadresh-savani/distilbert-base-uncased-emotion',
@@ -36,7 +36,7 @@ def process_datset(filename):
     length = len(df)
     
     for index, row in df.iterrows():
-        text = row['Text']
+        text = row[column_name]
         sentiments = get_sentiment(classifier, text)
         for sent in sentiments:
             feeling_map[sent['label']].append(sent['score'])
@@ -49,8 +49,14 @@ if __name__ == '__main__':
     # Represents the cleaned dataset file 
     # Example run: 
     filename = sys.argv[1]    
+    column_name = ''
     
-    sentiments = process_datset(filename)
+    if 'post' in filename:
+        column_name = 'Text'
+    else:
+        column_name = 'tweet'
+    
+    sentiments = process_datset(filename, column_name)
     
     with open(f"{filename}-distilbert-output.txt", "w") as file:
         for feeling, values in sentiments.items():
