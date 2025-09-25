@@ -23,8 +23,7 @@ DS 4002 – 001 – 1pm – September 2025
   - `matplotlib`, `seaborn` – visualizations  
   - `vaderSentiment` – lexicon-based sentiment analysis  
   - `transformers` (Hugging Face) – pretrained transformer models  
-    - `twitter-roberta-base-sentiment`  
-    - `bert-base-multilingual-uncased-sentiment`  
+    - `bert-base-multilingual-uncased-sentiment` 
     - `distilbert-base-uncased-emotion`  
 - **Platform:** Code developed and tested on Windows and MacOS  
 
@@ -41,12 +40,21 @@ TODO
    ```bash
    git clone https://github.com/SzetoBen/BME-Text-Project
    cd BME-AI-Sentiment-Project
-2. **Install dependencies**
+2. **Install dependencies**\
     pip install -r requirements.txt
-3. **Prepare the data**
+3. **Prepare the data**\
     You can either download both datasets and use the clean scripts to generate cleaned datasets
     or just download the cleaned pre_ai dataset here: https://drive.google.com/file/d/1N8RGOshx9SEwvd27XnCiPgkDw23Y2_gw/view?usp=sharing 
 4. **Run sentiment models**
+    1) **Running distilbert model**
+        1. Navigate to scripts directory ```cd scripts```
+        2. Run ```python ./distilbert_sentiment.py ..\data\cleaned_pre_ai.csv```
+        3. Run ```python ./distilbert_sentiment.py ..\data\cleaned_post_ai.csv```
+        4. This will output two .txt files containing the average sentiment of the corresponding dataset
+        5. Run ```python ./scripts/plot_distilbert.py``` in the project root directory 
+        6. Two plots will be generated in the ```output/plots``` directory showing the average sentiment for each dataset
+    2. **Running VADER model**
+    3. **Running bert model**
 
     
 
