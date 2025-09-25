@@ -60,7 +60,7 @@ TODO
         3. Run through the entire script with Colab
     3. **Running bert model**
         1. Navigate to scripts directory. ```cd scripts```
-        2. Run ```https://github.com/SzetoBen/BME-Text-Project/blob/main/scripts/bert_base_multilingual_uncased_sentiment_both_models.ipynb```
+        2. Run the code https://github.com/SzetoBen/BME-Text-Project/blob/main/scripts/bert_base_multilingual_uncased_sentiment_both_models.ipynb
         3. The outputs of the notebook can be matched with the data found in the output folder ```cd outputs```
     
 1) https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NHLEJL
