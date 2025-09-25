@@ -59,8 +59,9 @@ TODO
         2. In Colab, upload data from the repo and ensure naming for files are correct
         3. Run through the entire script with Colab
     3. **Running bert model**
-
+        1. Navigate to scripts directory. ```cd scripts```
+        2. Run ```https://github.com/SzetoBen/BME-Text-Project/blob/main/scripts/bert_base_multilingual_uncased_sentiment_both_models.ipynb```
+        3. The outputs of the notebook can be matched with the data found in the output folder ```cd outputs```
     
-
 1) https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NHLEJL
 2) https://github.com/Guillaumeserres31/Twitter-Sentiment-Analysis-on-Generative-AI-Adoption/blob/main/Dataset/GenerativeAI%20tweets.csv
