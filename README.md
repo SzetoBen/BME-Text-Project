@@ -54,6 +54,10 @@ TODO
         5. Run ```python ./scripts/plot_distilbert.py``` in the project root directory 
         6. Two plots will be generated in the ```output/plots``` directory showing the average sentiment for each dataset
     2. **Running VADER model**
+        1. Open the notebook directly in Colab (this opens the same notebook in the browser and lets you run it in Colab's environment):
+        https://colab.research.google.com/github/SzetoBen/BME-Text-Project/blob/main/scripts/VADERSentimentAnalysis.ipynb
+        2. In Colab, upload data from the repo and ensure naming for files are correct
+        3. Run through the entire script with Colab
     3. **Running bert model**
 
     
