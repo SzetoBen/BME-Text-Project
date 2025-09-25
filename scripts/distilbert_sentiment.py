@@ -50,15 +50,19 @@ if __name__ == '__main__':
     # Example run: 
     filename = sys.argv[1]    
     column_name = ''
+    output_file = ''
     
     if 'post' in filename:
         column_name = 'Text'
+        output_file = 'post_ai_distilbert_output.txt'
     else:
         column_name = 'tweet'
+        output_file = 'pre_ai_distilbert_output.txt'
+
     
     sentiments = process_datset(filename, column_name)
     
-    with open(f"{filename}-distilbert-output.txt", "w") as file:
+    with open(f"../output/{output_file}", "w") as file:
         for feeling, values in sentiments.items():
             avg_score = sum(values) / len(values) if values else 0
             file.write(f"{feeling}: {avg_score:.2f}\n")
