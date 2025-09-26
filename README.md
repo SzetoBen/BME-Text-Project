@@ -10,7 +10,7 @@ DS 4002 – 001 – 1pm – September 2025
 - **README.md** – Orientation and instructions for reproducing results  
 - **LICENSE.md** – MIT License for reuse of this repository  
 - **SCRIPTS/** – Source code for preprocessing and sentiment analysis  
-- **DATA/** – Raw and cleaned datasets, plus Data Appendix PDF  
+- **DATA/** – Cleaned datasets, plus Data metadata 
 - **OUTPUT/** – Figures, tables, and other analysis results  
 
 ---
@@ -30,8 +30,40 @@ DS 4002 – 001 – 1pm – September 2025
 ---
 
 ## Project Folder Map  
-
-TODO
+BME-Text-Project
+├── data
+│   ├── cleaned_pre_ai.csv
+│   ├── img
+│   │   ├── post-count.png
+│   │   └── pre-count.png
+│   ├── METADATA.md
+│   ├── post-chat-cleaned.csv
+│   ├── post-chat.csv
+│   ├── pre-chat-cleaned.md
+│   └── pre-chat.md
+├── LICENSE
+├── output
+│   ├── bert_both_models_output.txt
+│   ├── plots
+│   │   ├── date_vs_tweets.png
+│   │   ├── post_AI_bert.jpg
+│   │   ├── postAI-distilbert.png
+│   │   ├── postAI-vader.png
+│   │   ├── pre_AI_bert.jpg
+│   │   ├── preAI-distilbert.png
+│   │   └── preAI-vader.png
+│   ├── post_ai_distilbert_output.txt
+│   └── pre_ai_distilbert_output.txt
+├── README.md
+├── requirements.txt
+└── scripts
+    ├── bert_base_multilingual_uncased_sentiment_both_models.ipynb
+    ├── clean_pre_ai.py
+    ├── distilbert_sentiment.py
+    ├── exploratory_plots.ipynb
+    ├── plot_distilbert.py
+    ├── post_gpt_data.ipynb
+    └── VADERSentimentAnalysis.ipynb
 
 ---
 
