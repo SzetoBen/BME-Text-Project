@@ -30,30 +30,31 @@ DS 4002 – 001 – 1pm – September 2025
 ---
 
 ## Project Folder Map  
+```
 BME-Text-Project
 ├── data
-│   ├── cleaned_pre_ai.csv
-│   ├── img
-│   │   ├── post-count.png
-│   │   └── pre-count.png
-│   ├── METADATA.md
-│   ├── post-chat-cleaned.csv
-│   ├── post-chat.csv
-│   ├── pre-chat-cleaned.md
-│   └── pre-chat.md
+│   ├── cleaned_pre_ai.csv
+│   ├── img
+│   │   ├── post-count.png
+│   │   └── pre-count.png
+│   ├── METADATA.md
+│   ├── post-chat-cleaned.csv
+│   ├── post-chat.csv
+│   ├── pre-chat-cleaned.md
+│   └── pre-chat.md
 ├── LICENSE
 ├── output
-│   ├── bert_both_models_output.txt
-│   ├── plots
-│   │   ├── date_vs_tweets.png
-│   │   ├── post_AI_bert.jpg
-│   │   ├── postAI-distilbert.png
-│   │   ├── postAI-vader.png
-│   │   ├── pre_AI_bert.jpg
-│   │   ├── preAI-distilbert.png
-│   │   └── preAI-vader.png
-│   ├── post_ai_distilbert_output.txt
-│   └── pre_ai_distilbert_output.txt
+│   ├── bert_both_models_output.txt
+│   ├── plots
+│   │   ├── date_vs_tweets.png
+│   │   ├── post_AI_bert.jpg
+│   │   ├── postAI-distilbert.png
+│   │   ├── postAI-vader.png
+│   │   ├── pre_AI_bert.jpg
+│   │   ├── preAI-distilbert.png
+│   │   └── preAI-vader.png
+│   ├── post_ai_distilbert_output.txt
+│   └── pre_ai_distilbert_output.txt
 ├── README.md
 ├── requirements.txt
 └── scripts
@@ -64,6 +65,7 @@ BME-Text-Project
     ├── plot_distilbert.py
     ├── post_gpt_data.ipynb
     └── VADERSentimentAnalysis.ipynb
+```
 
 ---
 
